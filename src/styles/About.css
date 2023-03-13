@@ -1,0 +1,120 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  font-family: monospace;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+} 
+
+.about-title {
+  margin: 32px 0px 32px 0px;
+  font-size: 4em;
+  letter-spacing: 8px;
+  font-weight: 700;
+}
+
+.magenta-text {
+  color:rgb(240, 10, 136);
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 55%;
+  min-width: 500px;
+}
+
+.headshot {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  max-height: 400px;
+  max-width: auto;
+  border-radius: 200px;
+  
+}
+
+.profile-title {
+  font-size: 3em;
+  font-weight: 700;
+  border-bottom: 3px solid rgb(240, 10, 136);
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.blue-highlight {
+  background-color: rgb(7, 91, 175);
+}
+
+.profile-bio {
+  font-size: 1.6em;
+}
+
+.bio-section {
+  margin-bottom: 36px;
+}
+
+.last-bio-section {
+  margin-bottom: 64px;
+}
+
+.email {
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.email:hover {
+  color:rgb(7, 91, 175);
+}
+
+.skills-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.skill-img {
+  height: auto;
+  width: auto;
+  max-height: 60px;
+  max-width: auto;
+  margin-right: 1rem;
+}
+
+.portfolio-link {
+  border: 1px solid rgb(240, 10, 136);
+  padding: 18px 48px 18px 48px;
+  margin-bottom: 64px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+.portfolio-link:hover { 
+  background-color: rgb(240, 10, 136);
+  color: white;
+}
+
+.portfolio-link a:hover {
+  color: white;
+}
+
+.text-link {
+  color:rgb(240, 10, 136);
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color:rgb(7, 91, 175);
+  transition: color 0.3s ease;
+}

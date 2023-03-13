@@ -1,0 +1,98 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  height: 100vh;
+  font-family: monospace;
+  padding: 0px 24px 0px 24px;
+}
+
+.intro-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  justify-content: space-around;
+}
+
+.intro-text {
+  color: white;
+  padding-bottom: .2em;
+}
+
+.name-text {
+  font-size: 5em;
+  letter-spacing: .9em;
+  font-weight: 700;
+  filter: blur(4px);
+}
+
+.fade-in-text { 
+  opacity: 0;
+  animation: fadeInBlur 2s .2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.fade-in-slow {
+  opacity: 0;
+  animation: fadeInBlur 2s .2s ease-out forwards;
+  animation-delay: 2.5s;
+}
+
+.fade-in-slowest {
+  opacity: 0;
+  pointer-events: none;
+  animation: fadeIn 1.2s .2s ease-out forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes fadeInBlur {
+  0% {opacity: 0;}
+  0% {filter: blur(10px);}
+  100% {opacity: 1;}
+  100% {pointer-events: all;}
+  100% {filter: blur(0px);}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  100% {pointer-events: all;}
+}
+
+
+.about-me-body{
+  padding-top: 24px;
+  letter-spacing: 0em;
+  font-size: 1.5em;
+}
+
+.link-section {
+  font-size: 1.5em;
+  display: flex;
+  color: white;
+
+}
+
+.link-text {
+  border: 1px solid rgb(240, 10, 136);
+  padding: 12px 36px 12px 36px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.link-text:hover { 
+  background-color: rgb(240, 10, 136);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .name-text {
+    font-size: 2em;
+  }
+}

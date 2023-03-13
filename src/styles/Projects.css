@@ -1,0 +1,142 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 600px;
+  font-family: monospace;
+}
+
+.projects-container{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.magenta-text {
+  color:rgb(240, 10, 136);
+}
+
+.projects-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 48px 0px 64px 0px;
+}
+
+.project-section-title {
+  font-size: 2.3rem;
+  margin-bottom: 36px;
+  border-bottom: 3px solid rgb(240, 10, 136);
+  width: 35%;
+  padding-bottom: 12px;
+}
+
+.title-right {
+  text-align: right;
+}
+
+.project-section {
+  display: flex;
+  width: 45%;
+  min-width: 900px;
+  margin-bottom: 72px;
+}
+
+.project-thumbnail {
+  min-width: 480px;
+  height: 300px;
+  background-color: white;
+}
+
+.project-thumbnail img {
+  height: 300px;
+  width: 480px;
+}
+
+.project-description-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-description {
+  font-size: 1.5rem;
+}
+
+.section-left {
+  margin-right: 24px;
+}
+
+.link-section {
+  display: flex;
+}
+
+.link {
+  padding: 12px 24px 12px 24px;
+  border: 2px solid rgb(240, 10, 136);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color:rgb(240, 10, 136);
+}
+
+.link-left {
+  margin-right: 24px;
+}
+
+.portfolio-thumbnail {
+  border: solid 3px rgb(240, 10, 136);
+  background-color: white;
+  font-family: 'Major Mono Display', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.portfolio-thumbnail-text {
+  font-weight: 700;
+  color: rgb(240, 10, 136);
+  border: 5px solid rgb(240, 10, 136);
+  padding: 1rem;
+}
+
+
+@media (max-width: 1400px) {
+  .project-description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-thumbnail {
+    min-width: 160px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 16px;
+  }
+  
+  .project-thumbnail img {
+    height: 100px;
+    width: 160px;
+  }
+
+  .project-description {
+    width: 400px;
+    margin-bottom: 16px;
+  }
+
+  .link-section {
+    margin-bottom: 16px;
+  }
+
+}
